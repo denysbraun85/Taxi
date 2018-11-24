@@ -1,0 +1,353 @@
+/* Fonts family */
+@font-face {
+  font-family: 'Lato-reg';
+  src: url('../fonts/Lato-Regular.eot');
+  src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-black';
+  src: url('../fonts/Lato-Black.eot');
+  src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff'), url('../fonts/Lato-Black.ttf') format('truetype'), url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Teko-reg';
+  src: url('../fonts/Teko-Regular.eot');
+  src: url('../fonts/Teko-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Teko-Regular.woff2') format('woff2'), url('../fonts/Teko-Regular.woff') format('woff'), url('../fonts/Teko-Regular.ttf') format('truetype'), url('../fonts/Teko-Regular.svg#Teko-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+html body {
+  font-family: 'Lato-reg', sans-serif;
+}
+/* Typography */
+section {
+  padding: 8rem 0;
+}
+.head-line-text {
+  font-family: 'Lato-black', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  color: #010101;
+}
+.info-text {
+  font-family: 'Lato-reg', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  color: #010101;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Teko-reg', sans-serif;
+  font-size: 3rem;
+  background-color: #010101;
+  padding: 0.6rem 2rem 0.25rem;
+  border-radius: 0.5rem;
+  line-height: 3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  background-color: #4e4e4e;
+}
+/* Main */
+.main {
+  background: url("../img/header-background.jpg") no-repeat;
+  background-size: cover;
+  min-height: 74rem;
+  width: 100%;
+  position: relative;
+  /* Main page menu */
+  /* Main text info about this website */
+}
+.main .header {
+  padding-top: 4rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+}
+.main .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .header .logo .logo-name {
+  color: #ffffff;
+  font-family: 'Lato-black', sans-serif;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.main .header .logo .logo-name strong {
+  text-transform: uppercase;
+  color: #daa504;
+}
+.main .header .logo .logo-tagline {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'Lato-black', sans-serif;
+  letter-spacing: 0.25rem;
+  white-space: nowrap;
+}
+.main .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Lato-reg', sans-serif;
+}
+.main .header .menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5rem;
+  white-space: nowrap;
+}
+.main .header .menu a:hover {
+  color: #010101;
+  background-color: #ffc61a;
+  padding: 0.5rem 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5rem;
+  font-weight: bold;
+}
+.main .main-text {
+  padding-top: 6rem;
+}
+.main .main-text .order-text {
+  font-size: 3rem;
+  color: #ffc61a;
+  font-family: 'Lato-black', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3rem;
+}
+.main .main-text .phone-text {
+  font-size: 7rem;
+  color: #ffffff;
+  font-family: 'Lato-black', sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 7rem;
+}
+.main .main-text .website-text {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Lato-black', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1.2rem;
+}
+.main .main-text .main-car {
+  width: 100%;
+  margin-top: 6.5rem;
+  position: absolute;
+  top: 17rem;
+  left: 0;
+}
+/* Section-about-booking-form */
+.about-booking-form {
+  background-color: #ffc61a;
+}
+.about-booking-form .about-booking {
+  padding-top: 4.5rem;
+  max-width: 50rem;
+}
+.about-booking-form .about-booking h1 {
+  font-family: 'Lato-black', sans-serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 4.8rem;
+}
+.about-booking-form .about-booking .info-text {
+  margin-top: 3.5rem;
+}
+.about-booking-form .booking-form {
+  max-width: 42rem;
+  width: 100%;
+  padding-top: 4.5rem;
+}
+.about-booking-form .booking-form span {
+  display: block;
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Lato-reg', sans-serif;
+  background-color: #010101;
+  width: 100%;
+  line-height: 8rem;
+  padding-left: 4rem;
+}
+.about-booking-form .booking-form strong {
+  color: #ffc61a;
+}
+.about-booking-form .booking-form .forms {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  /* Time and date form */
+  /* Vehicle form */
+}
+.about-booking-form .booking-form .forms .order-info-name-phone,
+.about-booking-form .booking-form .forms .order-info-when-time,
+.about-booking-form .booking-form .forms .order-info-start-end,
+.about-booking-form .booking-form .forms .select-vehicle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Form starting styles */
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group,
+.about-booking-form .booking-form .forms .order-info-when-time .group,
+.about-booking-form .booking-form .forms .order-info-start-end .group,
+.about-booking-form .booking-form .forms .select-vehicle .group {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 45%;
+  /* Label */
+  /* Bottom Bars */
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group input,
+.about-booking-form .booking-form .forms .order-info-when-time .group input,
+.about-booking-form .booking-form .forms .order-info-start-end .group input,
+.about-booking-form .booking-form .forms .select-vehicle .group input {
+  font-size: 2rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 0.2rem solid #e4e4e4;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group input:focus,
+.about-booking-form .booking-form .forms .order-info-when-time .group input:focus,
+.about-booking-form .booking-form .forms .order-info-start-end .group input:focus,
+.about-booking-form .booking-form .forms .select-vehicle .group input:focus {
+  outline: none;
+  /* Active state */
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group input:focus ~ label,
+.about-booking-form .booking-form .forms .order-info-when-time .group input:focus ~ label,
+.about-booking-form .booking-form .forms .order-info-start-end .group input:focus ~ label,
+.about-booking-form .booking-form .forms .select-vehicle .group input:focus ~ label {
+  top: -1.5rem;
+  font-size: 1.4rem;
+  color: #010101;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group input:valid ~ label,
+.about-booking-form .booking-form .forms .order-info-when-time .group input:valid ~ label,
+.about-booking-form .booking-form .forms .order-info-start-end .group input:valid ~ label,
+.about-booking-form .booking-form .forms .select-vehicle .group input:valid ~ label {
+  top: -1.5rem;
+  font-size: 1.4rem;
+  color: #e4e4e4;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group label,
+.about-booking-form .booking-form .forms .order-info-when-time .group label,
+.about-booking-form .booking-form .forms .order-info-start-end .group label,
+.about-booking-form .booking-form .forms .select-vehicle .group label {
+  color: #010101;
+  font-size: 1.8rem;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0.8rem;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  /* active state */
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar:before,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar:before,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar:before,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar:before,
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar:after,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar:after,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar:after,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar:after {
+  content: "";
+  height: 0.2rem;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #010101;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar:before,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar:before,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar:before,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar:before {
+  left: 50%;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar:after,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar:after,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar:after,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar:after {
+  right: 50%;
+}
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar input:focus ~ .bar:before,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar input:focus ~ .bar:before,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar input:focus ~ .bar:before,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar input:focus ~ .bar:before,
+.about-booking-form .booking-form .forms .order-info-name-phone .group .bar input:focus ~ .bar:after,
+.about-booking-form .booking-form .forms .order-info-when-time .group .bar input:focus ~ .bar:after,
+.about-booking-form .booking-form .forms .order-info-start-end .group .bar input:focus ~ .bar:after,
+.about-booking-form .booking-form .forms .select-vehicle .group .bar input:focus ~ .bar:after {
+  width: 50%;
+}
+.about-booking-form .booking-form .forms .order-info-when-time .group label {
+  opacity: 0;
+}
+.about-booking-form .booking-form .forms .order-info-when-time .group input:focus ~ label {
+  opacity: 1;
+}
+.about-booking-form .booking-form .forms .select-vehicle .group {
+  width: 100%;
+}
+.about-booking-form .booking-form .forms .button {
+  width: 100%;
+}
+/* Adaptive */
