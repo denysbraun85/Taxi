@@ -67,7 +67,6 @@ section {
 .main {
   background: url("../img/header-background.jpg") no-repeat;
   background-size: cover;
-  min-height: 74rem;
   width: 100%;
   position: relative;
   /* Main page menu */
@@ -142,6 +141,7 @@ section {
 }
 .main .main-text {
   padding-top: 6rem;
+  padding-bottom: 48rem;
 }
 .main .main-text .order-text {
   font-size: 3rem;
@@ -169,6 +169,7 @@ section {
   letter-spacing: 1.2rem;
 }
 .main .main-text .main-car {
+  display: block;
   width: 100%;
   margin-top: 6.5rem;
   position: absolute;
@@ -351,3 +352,130 @@ section {
   width: 100%;
 }
 /* Adaptive */
+@media (max-width: 992px) {
+  #menu {
+    width: 100%;
+    padding-left: 0;
+    font-size: 1.2rem;
+  }
+  #menu a {
+    padding: 0.1rem 0.5rem;
+  }
+  #menu a:hover {
+    padding: 0.1rem 0.5rem;
+  }
+  #main-text {
+    padding-bottom: 25rem;
+  }
+  #main-text .order-text {
+    font-size: 2.5rem;
+  }
+  #main-text .phone-text {
+    font-size: 5rem;
+  }
+  #main-text .website-text {
+    font-size: 1.5rem;
+  }
+  #main-text .main-car {
+    margin-top: 1.5rem;
+  }
+  #about-booking-form .head-line-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  #about-booking-form h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  #about-booking-form .booking-form span {
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #menu {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #menu a {
+    padding: 0.1rem 0.5rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #menu a:hover {
+    padding: 0.1rem 0.5rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #main-text {
+    padding-bottom: 19rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #main-text .main-car {
+    width: 50%;
+    left: 25%;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #about-booking-form .head-line-text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #about-booking-form h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #about-booking-form .info-text {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #about-booking-form .button {
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 664px) {
+  #header .logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 664px) {
+  #header .menu {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 1rem auto auto;
+  }
+}
+@media (max-width: 768px) and (max-width: 664px) {
+  #main-text {
+    padding-bottom: 14rem;
+  }
+  #main-text .main-car {
+    top: 12rem;
+  }
+  #main-text .phone-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  #main-text .website-text {
+    letter-spacing: 0.5rem;
+  }
+}
