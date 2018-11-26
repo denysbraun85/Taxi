@@ -11,8 +11,8 @@ $(document).ready(function(){
                     arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    prevArrow: '<button type="button" class="arrow-prev"><img src="../img/arrow-prev.svg"></button>',
-                    nextArrow: '<button type="button" class="arrow-next"><img src="../img/arrow-next.svg"></button>',
+                    prevArrow: '<button type="button" class="arrow-prev"><img src="../img/arrow-prev.png"></button>',
+                    nextArrow: '<button type="button" class="arrow-next"><img src="../img/arrow-next.png"></button>',
                     autoplay: true,
                     autoplaySpeed: 2000
 
