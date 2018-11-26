@@ -12,16 +12,16 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     prevArrow: '<button type="button" class="arrow-prev"><img src="../img/arrow-prev.png"></button>',
-                    nextArrow: '<button type="button" class="arrow-next"><img src="../img/arrow-next.png"></button>'
-                    // centerMode: true
+                    nextArrow: '<button type="button" class="arrow-next"><img src="../img/arrow-next.png"></button>',
+                    autoplay: true,
+                    autoplaySpeed: 2000
 
-                 // breakpoint: 768,
+
+                 // breakpoint: 425,
                  // settings: {
-                 //     arrows: true,
-                 //     centerMode: true,
-                 //     // centerPadding: '40px',
-                 //     slidesToShow: 1,
-                 //     slidesToScroll: 1
+                 //     arrows: false,
+                 //      autoplay: true,
+                 //    autoplaySpeed: 2000,
                  // }
                 }
 

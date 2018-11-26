@@ -530,6 +530,11 @@ section {
 .arrow-next:focus {
   outline: none;
 }
+@media (max-width: 425px) {
+  .arrow-next {
+    display: none;
+  }
+}
 .arrow-prev {
   position: absolute;
   left: 0;
@@ -550,6 +555,11 @@ section {
 }
 .arrow-prev:focus {
   outline: none;
+}
+@media (max-width: 425px) {
+  .arrow-prev {
+    display: none;
+  }
 }
 /* Adaptive */
 @media (max-width: 992px) {
