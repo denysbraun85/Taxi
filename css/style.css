@@ -28,6 +28,9 @@ html {
 html body {
   font-family: 'Lato-reg', sans-serif;
 }
+.slick-slide {
+  outline: none;
+}
 /* Typography */
 section {
   padding: 8rem 0;
@@ -351,6 +354,203 @@ section {
 .about-booking-form .booking-form .forms .button {
   width: 100%;
 }
+/* Tariffs */
+.tariffs h2 {
+  color: #ffc61a;
+  font-size: 3.5rem;
+  font-family: 'Lato-black', sans-serif;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.tariffs h2 strong {
+  color: #010101;
+  font-size: 4.4rem;
+  line-height: 4.4rem;
+}
+.tariffs .car-container-slider {
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .tariffs .car-container-slider {
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) and (max-width: 976px) {
+  .tariffs .car-container-slider {
+    max-width: 50rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 976px) and (max-width: 618px) {
+  .tariffs .car-container-slider {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 976px) and (max-width: 618px) and (max-width: 518px) {
+  .tariffs .car-container-slider {
+    max-width: 30rem;
+  }
+}
+.tariffs .car-container-slider .cards {
+  border: none;
+  max-width: 37rem;
+  background-color: #f5f4f2;
+  position: relative;
+  margin-top: 14.5rem;
+  margin-bottom: 4rem;
+  padding: 2.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+}
+@media (max-width: 992px) {
+  .tariffs .car-container-slider .cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.tariffs .car-container-slider .cards:hover {
+  background-color: #ffc61a;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.tariffs .car-container-slider .cards:hover .price {
+  color: #010101;
+}
+.tariffs .car-container-slider .cards:hover .button {
+  background-color: #010101;
+  color: #ffffff;
+}
+.tariffs .car-container-slider .cards:hover .star-container {
+  display: block;
+}
+.tariffs .car-container-slider .cards img {
+  position: absolute;
+  width: 100%;
+  bottom: 84%;
+  left: 0;
+}
+.tariffs .car-container-slider .cards h3 {
+  color: #010101;
+  font-family: 'Lato-black', sans-serif;
+  font-size: 3rem;
+  padding-top: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .tariffs .car-container-slider .cards h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1200px) and (max-width: 425px) {
+  .tariffs .car-container-slider .cards h3 {
+    font-size: 2rem;
+  }
+}
+.tariffs .car-container-slider .cards .info-text {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Lato-reg', sans-serif;
+}
+.tariffs .car-container-slider .cards .price {
+  color: #ffc61a;
+  font-size: 4.3rem;
+  margin-top: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4.3rem;
+  font-family: 'Lato-black', sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tariffs .car-container-slider .cards .button {
+  max-width: 16rem;
+  margin: 3.5rem auto auto;
+  background-color: #ffc61a;
+  color: #010101;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tariffs .car-container-slider .cards .button:hover {
+  color: #ffffff;
+  background-color: #4e4e4e;
+}
+.tariffs .car-container-slider .cards .star-container {
+  display: none;
+  max-width: 7.4rem;
+  max-height: 7.4rem;
+  position: absolute;
+  left: 79%;
+  top: 82%;
+  right: 0;
+  bottom: 0;
+  background-color: #010101;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media (max-width: 992px) {
+  .tariffs .car-container-slider .cards .star-container {
+    left: 80%;
+  }
+}
+.tariffs .car-container-slider .cards .star-container img {
+  width: 35%;
+  bottom: 13%;
+  right: 0;
+  left: 49%;
+}
+/* Slick slider arrows */
+.arrow-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 3;
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.arrow-next:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(5rem) scale(1.2);
+          transform: translateX(5rem) scale(1.2);
+}
+.arrow-next:focus {
+  outline: none;
+}
+.arrow-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 3;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.arrow-prev:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-5rem) scale(1.2);
+          transform: translateX(-5rem) scale(1.2);
+}
+.arrow-prev:focus {
+  outline: none;
+}
 /* Adaptive */
 @media (max-width: 992px) {
   #menu {
@@ -430,6 +630,11 @@ section {
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  #about-booking-form .booking-form {
+    margin: auto;
   }
 }
 @media (max-width: 992px) and (max-width: 768px) {
