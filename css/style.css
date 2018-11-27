@@ -515,6 +515,7 @@ section {
 }
 /* Slick slider arrows */
 .arrow-next {
+  width: 5rem;
   position: absolute;
   right: 0;
   top: 50%;
@@ -536,6 +537,7 @@ section {
   outline: none;
 }
 .arrow-prev {
+  width: 5rem;
   position: absolute;
   left: 0;
   top: 50%;
@@ -618,6 +620,141 @@ section {
 }
 .advantages .button:focus {
   outline: none;
+}
+/* App section */
+.taxi-app {
+  position: relative;
+  padding-bottom: 16rem;
+}
+@media (max-width: 992px) {
+  .taxi-app {
+    padding-bottom: 3rem;
+  }
+}
+.taxi-app .order-text {
+  font-size: 3rem;
+  color: #ffc61a;
+  font-family: 'Lato-black', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3rem;
+}
+@media (max-width: 490px) {
+  .taxi-app .order-text {
+    font-size: 2rem;
+  }
+}
+.taxi-app .text-header {
+  color: #010101;
+  font-size: 4.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4.3rem;
+  margin-bottom: 10rem;
+  font-family: 'Lato-black', sans-serif;
+}
+@media (max-width: 992px) {
+  .taxi-app .text-header {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 992px) and (max-width: 490px) {
+  .taxi-app .text-header {
+    font-size: 3rem;
+  }
+}
+.taxi-app .app-container {
+  padding-left: 10rem;
+}
+@media (max-width: 992px) {
+  .taxi-app .app-container {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.taxi-app .app-container h5 {
+  font-size: 2.5rem;
+  color: #010101;
+  line-height: 2.5rem;
+  font-family: 'Lato-black', sans-serif;
+  padding-top: 2rem;
+}
+@media (max-width: 992px) {
+  .taxi-app .app-container h5 {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 490px) {
+  .taxi-app .app-container h5 {
+    font-size: 2rem;
+  }
+}
+.taxi-app .app-container .info-text {
+  font-family: 'Lato-reg', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  color: #010101;
+  margin-top: 3rem;
+}
+@media (max-width: 992px) {
+  .taxi-app .app-container .info-text {
+    text-align: center;
+  }
+}
+.taxi-app .app-container .app-link-container {
+  margin-top: 7rem;
+}
+@media (max-width: 490px) {
+  .taxi-app .app-container .app-link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.taxi-app .app-container .app-link-container img {
+  padding-right: 2rem;
+  max-width: 100%;
+}
+.taxi-app .app-container .app-link-container img:nth-child(2) {
+  padding-right: 0;
+}
+@media (max-width: 490px) {
+  .taxi-app .app-container .app-link-container img:first-child {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+.taxi-app .app-container .app-link-container img:hover {
+  cursor: pointer;
+}
+.taxi-app .hand {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+}
+@media (max-width: 1200px) {
+  .taxi-app .hand {
+    right: 0;
+  }
+}
+@media (max-width: 1200px) and (max-width: 992px) {
+  .taxi-app .hand {
+    display: none;
+  }
 }
 /* Adaptive */
 @media (max-width: 992px) {
@@ -731,10 +868,10 @@ section {
 }
 @media (max-width: 768px) and (max-width: 664px) {
   #header .menu {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     margin: 1rem auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 768px) and (max-width: 664px) and (max-width: 340px) {
