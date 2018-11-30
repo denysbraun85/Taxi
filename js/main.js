@@ -13,8 +13,8 @@ $(document).ready(function(){
                      slidesToScroll: 1,
                      // prevArrow: $('.arrow-prev'),
                      // nextArrow: $('.arrow-next'),
-                     prevArrow: '<button class="arrow-prev"><img src="../img/arrow-prev.png" alt="prev"></button>',
-                     nextArrow: '<button class="arrow-next"><img src="../img/arrow-next.png" alt="next"></button>',
+                     prevArrow: '<button class="arrow-prev"><img src="./img/arrow-prev.png"></button>',
+                     nextArrow: '<button class="arrow-next"><img src="./img/arrow-next.png"></button>',
                      autoplay: true,
                      autoplaySpeed: 2000
                  }
