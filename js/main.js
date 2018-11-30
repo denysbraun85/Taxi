@@ -11,12 +11,10 @@ $(document).ready(function(){
                      arrows: true,
                      slidesToShow: 1,
                      slidesToScroll: 1,
-                     // prevArrow: $('.arrow-prev'),
-                     // nextArrow: $('.arrow-next'),
                      prevArrow: '<button class="arrow-prev"><img src="./img/arrow-prev.png"></button>',
                      nextArrow: '<button class="arrow-next"><img src="./img/arrow-next.png"></button>',
                      autoplay: true,
-                     autoplaySpeed: 2000
+                     autoplaySpeed: 3000
                  }
              },
              {
@@ -26,7 +24,7 @@ $(document).ready(function(){
                          slidesToShow: 1,
                          slidesToScroll: 1,
                          autoplay: true,
-                         autoplaySpeed: 2000
+                         autoplaySpeed: 3000
                      }
                  }
 

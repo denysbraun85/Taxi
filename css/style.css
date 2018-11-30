@@ -960,6 +960,13 @@ section {
   max-width: 34rem;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .footer .about-container,
+  .footer .download-container,
+  .footer .contacts-container {
+    margin-bottom: 5rem;
+  }
+}
 .footer .copyrights-container {
   padding-top: 10rem;
 }
@@ -978,6 +985,11 @@ section {
   padding-bottom: 3.8rem;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .footer h6 {
+    text-align: center;
+  }
+}
 .footer .about-container .social-icon-container {
   margin-top: 4rem;
 }
@@ -988,7 +1000,8 @@ section {
   color: #ffc61a;
   line-height: 1rem;
 }
-.footer .download-container .android-dev {
+.footer .download-container .android-dev,
+.footer .download-container .apple-dev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,6 +1012,17 @@ section {
       -ms-flex-align: end;
           align-items: flex-end;
   max-width: 18rem;
+}
+.footer .download-container .android-dev:hover,
+.footer .download-container .apple-dev:hover {
+  cursor: pointer;
+}
+.footer .download-container .android-dev:hover svg,
+.footer .download-container .apple-dev:hover svg {
+  fill: #ffc61a;
+}
+.footer .download-container .apple-dev .info-text {
+  margin-top: 2rem;
 }
 .footer .download-container svg {
   width: 3rem;
@@ -1011,6 +1035,31 @@ section {
 .footer .download-container svg:hover {
   fill: #ffc61a;
   cursor: pointer;
+}
+.footer .contacts-container {
+  min-width: 34rem;
+  width: 100%;
+}
+.footer .contacts-container .info-text {
+  margin-top: 2rem;
+  display: block;
+}
+.footer .contacts-container svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #ffffff;
+  margin: auto 2.7rem auto auto;
+}
+.footer .contacts-container .city,
+.footer .contacts-container .contact-phone,
+.footer .contacts-container .mail,
+.footer .contacts-container .website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .contact-info-container {
+  padding-top: 2rem;
 }
 /* Adaptive */
 @media (max-width: 992px) {
