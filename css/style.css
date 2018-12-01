@@ -64,7 +64,9 @@ section {
   transition: all 0.2s;
 }
 .button:hover {
-  background-color: #4e4e4e;
+  color: #b3b3b3;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 /* Main */
 .main {
@@ -91,6 +93,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.main .header .logo:hover {
+  cursor: pointer;
 }
 .main .header .logo .logo-name {
   color: #ffffff;
@@ -132,6 +137,8 @@ section {
           box-sizing: border-box;
   border-radius: 5rem;
   white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .main .header .menu a:hover {
   color: #010101;
@@ -182,6 +189,11 @@ section {
 /* Section-about-booking-form */
 .about-booking-form {
   background-color: #ffc61a;
+}
+@media (max-width: 460px) {
+  .about-booking-form {
+    padding-top: 0;
+  }
 }
 .about-booking-form .about-booking {
   padding-top: 4.5rem;
@@ -484,8 +496,8 @@ section {
   transition: all 0.2s;
 }
 .tariffs .car-container-slider .cards .button:hover {
-  color: #ffffff;
-  background-color: #4e4e4e;
+  color: #b3b3b3;
+  background-color: #010101;
 }
 .tariffs .car-container-slider .cards .star-container {
   display: none;
@@ -731,7 +743,11 @@ section {
 }
 .taxi-app .app-container .app-link-container img {
   padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   max-width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .taxi-app .app-container .app-link-container img:nth-child(2) {
   padding-right: 0;
@@ -744,6 +760,8 @@ section {
 }
 .taxi-app .app-container .app-link-container img:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .taxi-app .hand {
   position: absolute;
@@ -938,6 +956,11 @@ section {
   color: #ffffff;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .footer .info-text {
+    text-align: center;
+  }
+}
 .footer svg {
   width: 2rem;
   height: 2rem;
@@ -964,7 +987,7 @@ section {
   .footer .about-container,
   .footer .download-container,
   .footer .contacts-container {
-    margin-bottom: 5rem;
+    margin: auto auto 5rem;
   }
 }
 .footer .copyrights-container {
@@ -974,6 +997,7 @@ section {
   font-size: 1rem;
   line-height: 1rem;
   color: #ffffff;
+  text-align: center;
 }
 .footer h6 {
   font-size: 2.6rem;
@@ -992,6 +1016,14 @@ section {
 }
 .footer .about-container .social-icon-container {
   margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .footer .about-container .social-icon-container {
+    width: 40%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer .download-container .mobile-device-container .info-text {
   margin-top: 4.6rem;
@@ -1012,6 +1044,13 @@ section {
       -ms-flex-align: end;
           align-items: flex-end;
   max-width: 18rem;
+}
+@media (max-width: 768px) {
+  .footer .download-container .android-dev,
+  .footer .download-container .apple-dev {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer .download-container .android-dev:hover,
 .footer .download-container .apple-dev:hover {
@@ -1036,10 +1075,6 @@ section {
   fill: #ffc61a;
   cursor: pointer;
 }
-.footer .contacts-container {
-  min-width: 34rem;
-  width: 100%;
-}
 .footer .contacts-container .info-text {
   margin-top: 2rem;
   display: block;
@@ -1060,6 +1095,14 @@ section {
 }
 .footer .contact-info-container {
   padding-top: 2rem;
+}
+@media (max-width: 768px) {
+  .footer .contact-info-container {
+    width: 57%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* Adaptive */
 @media (max-width: 992px) {

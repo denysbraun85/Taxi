@@ -52,3 +52,6 @@ $(document).ready(function(){
         ]
     });
 });
+
+/* Animation init*/
+new WOW().init();
